@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+var fs = require("fs"),
+    pkg = require("../package.json");
+
+console.log(JSON.stringify({
+  "name": "d3",
+  "version": pkg.version,
+  "description": pkg.description,
+  "keywords": pkg.keywords,
+  "homepage": pkg.homepage,
+  "author": pkg.author,
+  "contributors": pkg.contributors,
+  "repository": pkg.repository,
+  "main": "d3.js",
+  "scripts": [
+    "d3.js"
+  ],
+  "ignore": [
+    ".DS_Store",
+    ".git",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "Makefile",
+    "bin",
+    "component.json",
+    "index.js",
+    "lib",
+    "node_modules",
+    "package.json",
+    "src",
+    "test"
+  ]
+}, null, 2));
